@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>blog list</title>
+    </head>
+    <body>
+        <h1>boad page</h1>
+        <table>
+            {% for list in postlist %}
+            <ul>
+                <li>{{list.postname}}</li>
+                <li>{{list.contents}}</li>
+            </ul>
+            {% endfor %}
+        </table>
+    </body>
+</html>
